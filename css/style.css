@@ -133,6 +133,7 @@ form {
     color: red;
     width: 75%;
     text-align: left;
+    margin: 0;
 }
 
 form button {
