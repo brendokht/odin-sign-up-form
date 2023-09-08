@@ -120,6 +120,21 @@ form {
     font-size: 18px;
 }
 
+.input input:focus {
+    outline: 1px solid lightgreen;
+    box-shadow: 0px 10px 10px -4px black;
+}
+
+.input input:invalid {
+    outline: 1px solid red;
+}
+
+.input p {
+    color: red;
+    width: 75%;
+    text-align: left;
+}
+
 form button {
     margin: 4% 5%;
     padding: 1% 4%;
@@ -127,4 +142,20 @@ form button {
     border: none;
     border-radius: 5px;
     background-color: var(--secondary);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.invalid {
+    outline: 1px solid red;
+}
+
+.valid {
+    outline: none;
 }

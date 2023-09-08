@@ -19,7 +19,7 @@
     <div class="content">
         <h1>This is not a real online service. Get Started</h1>
         <div class="form">
-            <form action="#" method="post">
+            <form id="sign-up-form" name="sign-up" action="#" method="post">
                 <div class="form-fields">
                     <div class="input">
                         <label for="first_name">First Name</label>
@@ -45,6 +45,7 @@
                     <div class="input">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" minlength="3" required>
+                        <p id="passwordError" class="hidden">Passwords do not match</p>
                     </div>
 
                     <div class="input">
@@ -52,12 +53,12 @@
                         <input type="password" id="confirm_password" name="confirm_password" minlength="3" required>
                     </div>
                 </div>
-                <button type="submit">Create Account</button>
+                <button id="submit" type="submit">Create Account</button>
             </form>
         </div>
         <p>Already have an account? <a href="#">Log in</a></p>
     </div>
-    <script href="js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
