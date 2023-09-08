@@ -1,13 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+    --primary: red;
+    --secondary: lightcoral;
+    --background-color: rgb(36, 36, 36);
+    --form-color: rgb(48, 48, 48);
+    --text-color: rgb(255, 255, 255);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
 }
 
 body {
     display: flex;
     height: 100vh;
     width: 100vw;
+    background-color: var(--background-color);
 }
 
 .sidebar {
@@ -52,34 +64,51 @@ body {
 
 .sidebar a {
     text-decoration: none;
-    color: lightcoral
+    color: var(--primary);
 }
 
 .content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
     width: 67vw;
 }
 
-.form h1 {
-    margin: 3% 0;
+.content h1,
+.content p {
+    margin-left: 5%;
+    color: var(--text-color)
+}
+
+.content a {
+    text-decoration: none;
+    color: var(--primary);
 }
 
 form {
-    width: 50vw;
+    width: 67vw;
+}
+
+.form-fields {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--form-color);
+    padding: 2% 0;
 }
 
 .input {
     display: flex;
     flex-direction: column;
     width: 50%;
+    margin: 1% 0;
+    padding-left: 5%;
 }
 
 .input label {
     font-size: 24px;
+    color: var(--text-color);
 }
 
 .input input {
@@ -87,12 +116,15 @@ form {
     height: 28px;
     border: 1px solid black;
     border-radius: 5px;
+    padding: 1%;
+    font-size: 18px;
 }
 
 form button {
-    margin: 3% 0;
+    margin: 4% 5%;
     padding: 1% 4%;
     font-size: 16px;
     border: none;
     border-radius: 5px;
+    background-color: var(--secondary);
 }
